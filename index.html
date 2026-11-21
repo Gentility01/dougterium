@@ -42,10 +42,10 @@
   }
   </script>
 </head>
-<body>
+<body id="top">
   <a class="skip-link" href="#main">Skip to content</a>
 
-  <header class="site-header" id="top">
+  <header class="site-header">
     <div class="container header-inner">
       <a class="brand" href="#top" aria-label="Douglas Chiemela, home">
         <span class="brand-mark" aria-hidden="true">DC</span>
@@ -83,7 +83,7 @@
           <h1>Senior Backend Engineer building reliable systems with <span class="accent">Python &amp; Django</span>.</h1>
           <p class="lead">
             I design and scale backends for products that handle real money, real devices and real users.
-            Over 4+ years I've worked across fintech, IoT, real estate, e-commerce and SaaS, focusing on clean
+            Across 4+ years I've worked in fintech, IoT, real estate, e-commerce and SaaS, focusing on clean
             service-layer architecture, transaction safety and fast, well-structured REST APIs.
           </p>
           <div class="hero-cta">
@@ -161,7 +161,7 @@
               <ul class="project-points">
                 <li>Building the Django REST Framework APIs behind sales, inventory, payments, staff and branch management.</li>
                 <li>Designing PostgreSQL data models for businesses that operate across multiple branches.</li>
-                <li>Delivering backend features end to end, from data model to documented API, for the web dashboard.</li>
+                <li>Delivering backend features end to end, from data modelling to production-ready APIs.</li>
               </ul>
               <ul class="tags" aria-label="Technologies"><li>Django</li><li>DRF</li><li>PostgreSQL</li></ul>
               <a class="project-link" href="https://riinox.net/home" target="_blank" rel="noopener">Visit live site <span aria-hidden="true">↗</span></a>
@@ -223,9 +223,9 @@
           </article>
 
           <article class="project">
-            <a class="project-media" href="https://real-estate-management-8twy.onrender.com/" target="_blank" rel="noopener" tabindex="-1" aria-hidden="true">
+            <div class="project-media">
               <img src="uploads/Rem.jpg" alt="" loading="lazy">
-            </a>
+            </div>
             <div class="project-body">
               <p class="project-meta">Proptech · Contract Backend Engineer</p>
               <h3>Real Estate Marketplace</h3>
@@ -236,7 +236,6 @@
                 <li>Built a secure, stateless agent onboarding flow using Django's signing module.</li>
               </ul>
               <ul class="tags" aria-label="Technologies"><li>Django</li><li>DRF</li><li>Celery Beat</li><li>PostgreSQL</li></ul>
-              <a class="project-link" href="https://real-estate-management-8twy.onrender.com/" target="_blank" rel="noopener">Visit live site <span aria-hidden="true">↗</span></a>
             </div>
           </article>
         </div>
@@ -245,7 +244,6 @@
         <ul class="mini-projects">
           <li>
             <div><strong>AcctMarket</strong><span>Digital product marketplace with fiat &amp; crypto payments (Paystack, NowPayments) and atomic referral rewards.</span></div>
-            <a href="https://www.acctmarket.com/" target="_blank" rel="noopener" aria-label="Visit AcctMarket">↗</a>
           </li>
           <li>
             <div><strong>Growing Seed</strong><span>Savings &amp; investment app with secure transaction handling and data encryption.</span></div>
@@ -253,7 +251,6 @@
           </li>
           <li>
             <div><strong>Orullo</strong><span>Home-services platform: bookings, payments, real-time provider matching and notifications.</span></div>
-            <a href="https://oruulo.com/" target="_blank" rel="noopener" aria-label="Visit Orullo">↗</a>
           </li>
           <li>
             <div><strong>Schoolzy</strong><span>School management backend for grades, attendance and events across schools, parents and students.</span></div>
@@ -298,7 +295,7 @@
             </div>
           </li>
           <li>
-            <div class="tl-when">2025 – Early 2026</div>
+            <div class="tl-when">2025 – 2026</div>
             <div class="tl-what">
               <h3>Contract Backend Engineer <span>· Thrifto</span></h3>
               <p class="tl-context">Digital contribution &amp; savings platform (fintech).</p>
@@ -393,7 +390,7 @@
           <dl class="facts">
             <div><dt>Location</dt><dd>Nigeria · Remote (UTC+1)</dd></div>
             <div><dt>Education</dt><dd>HND, Computer Science, Abia State Polytechnic</dd></div>
-            <div><dt>Looking for</dt><dd>Senior / mid-senior backend roles</dd></div>
+            <div><dt>Looking for</dt><dd>Senior backend engineering roles</dd></div>
           </dl>
         </div>
       </div>
@@ -444,6 +441,10 @@
       <p><a href="#top">Back to top ↑</a></p>
     </div>
   </footer>
+
+  <a class="to-top" id="to-top" href="#top" aria-label="Back to top">
+    <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 19V5M5 12l7-7 7 7"/></svg>
+  </a>
 
   <script src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4.4.1/dist/email.min.js" defer></script>
   <script src="js/main.js" defer></script>

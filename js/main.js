@@ -28,8 +28,10 @@
 
   /* ---------- Header border on scroll ---------- */
   var header = document.querySelector('.site-header');
+  var toTop = document.getElementById('to-top');
   function onScroll() {
     if (header) header.classList.toggle('scrolled', window.scrollY > 8);
+    if (toTop) toTop.classList.toggle('show', window.scrollY > 600);
   }
   window.addEventListener('scroll', onScroll, { passive: true });
   onScroll();
